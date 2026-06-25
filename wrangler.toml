@@ -1,0 +1,10 @@
+name = "cybercode-academy"
+pages_build_output_dir = "./dist/client"
+
+[vars]
+# Add public environment variables here if needed
+
+[dev]
+port = 3000
+ip = "0.0.0.0"
+local_protocol = "http"

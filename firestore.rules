@@ -1,0 +1,47 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    
+    // Global safety net: default-deny catch-all
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    // Helper functions
+    function isValidId(id) { 
+      return id is string && id.size() <= 128 && id.matches('^[a-zA-Z0-9_\\-]+$'); 
+    }
+    
+    function incoming() { 
+      return request.resource.data; 
+    }
+    
+    function existing() { 
+      return resource.data; 
+    }
+
+    // Validation helper for Lead
+    function isValidLead(data) {
+      return data.keys().hasAll(['email', 'hackerHandle', 'selectedClass', 'registeredMemberId', 'createdAt', 'name', 'phone'])
+        && (data.keys().size() >= 7 && data.keys().size() <= 9)
+        && data.email is string && data.email.size() <= 128 && data.email.matches('^[^@]+@[^@]+\\.[^@]+$')
+        && data.hackerHandle is string && data.hackerHandle.size() <= 100
+        && data.selectedClass is string && data.selectedClass.size() <= 100
+        && data.registeredMemberId is string && data.registeredMemberId.size() <= 100
+        && data.name is string && data.name.size() <= 128
+        && data.phone is string && data.phone.size() <= 50
+        && data.createdAt == request.time
+        && (!data.keys().hasAny(['unlockedCoupon']) || (data.unlockedCoupon is string && data.unlockedCoupon.size() <= 50))
+        && (!data.keys().hasAny(['discountPct']) || (data.discountPct is number && data.discountPct >= 0 && data.discountPct <= 100));
+    }
+
+    // Match block for leads collection
+    match /leads/{leadId} {
+      // Allow any visitor to submit pre-registration, validating data-shape strictly
+      allow create: if isValidId(leadId) && isValidLead(incoming());
+      
+      // Absolute PII protection: Nobody can view or list registered candidates over public web SDK
+      allow read, update, delete: if false;
+    }
+  }
+}

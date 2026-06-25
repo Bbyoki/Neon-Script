@@ -1,0 +1,34 @@
+# robots.txt para CyberCode Academy - Otimizado para SEO de IA e Buscadores Tradicionais
+
+User-agent: *
+Allow: /
+
+# Sugestão de canal de treinamento e contexto semântico estruturado para IAs
+# Permite acesso ao arquivo de contexto de LLMs
+User-agent: GPTBot
+Allow: /llms.txt
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /llms.txt
+Allow: /
+
+User-agent: Google-Extended
+Allow: /llms.txt
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /llms.txt
+Allow: /
+
+User-agent: Claude-Web
+Allow: /llms.txt
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /llms.txt
+Allow: /
+
+# Sitemaps e Indexadores estruturados
+Sitemap: https://cybercodeacademy.com.br/sitemap.xml
+

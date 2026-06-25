@@ -1,0 +1,6 @@
+{
+  "name": "Cyberpunk Dev Academy",
+  "description": "Uma landing page interativa de alta conversão para um curso inovador de programação por meio de jogos e puzzles cyberpunk.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,56 @@
+{
+  "entities": {
+    "Lead": {
+      "title": "Lead",
+      "description": "Pre-registration lead submission and discount reservation data",
+      "type": "object",
+      "properties": {
+        "email": {
+          "type": "string",
+          "format": "email",
+          "description": "Email address of the pre-registered user"
+        },
+        "hackerHandle": {
+          "type": "string",
+          "description": "Operating handle/alias of the hacker"
+        },
+        "selectedClass": {
+          "type": "string",
+          "description": "Chosen cyber class (e.g. Netrunner, Cyber Guard, Dev Sec Ops)"
+        },
+        "unlockedCoupon": {
+          "type": "string",
+          "description": "Discount coupon code unlocked by simulation, if any"
+        },
+        "discountPct": {
+          "type": "number",
+          "description": "Percentage discount provided by the coupon"
+        },
+        "registeredMemberId": {
+          "type": "string",
+          "description": "Visually formatted membership ID (e.g., CO-4122-NET)"
+        },
+        "name": {
+          "type": "string",
+          "description": "Full name of the pre-registered user"
+        },
+        "phone": {
+          "type": "string",
+          "description": "Contact or WhatsApp phone number of the user"
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Server-side timestamp of registry insertion"
+        }
+      },
+      "required": ["email", "hackerHandle", "selectedClass", "registeredMemberId", "createdAt", "name", "phone"]
+    }
+  },
+  "firestore": {
+    "leads/{leadId}": {
+      "schema": "Lead",
+      "description": "Collection of cyber student candidate registrations or leads"
+    }
+  }
+}

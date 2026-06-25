@@ -1,0 +1,62 @@
+# CyberCode Academy
+
+> Aprenda Programação, Lógica, JavaScript, TypeScript, Python e Servidores resolvendo RPGs e quebra-cabeças mecânicos interativos em tempo real. Uma formação gamificada do zero ao desenvolvedor de elite.
+
+- URL Oficial: https://cybercodeacademy.com.br
+- Tipo: Plataforma de Ensino Gamificada / Academia Hacker
+- Idioma Principal: Português (pt-BR)
+
+## Proposta de Valor & Diferenciais
+- **Aprender Jogando (Game-Based Learning):** Chega de aulas passivas no YouTube ou decoreba de sintaxe de loops. No CyberCode, você trabalha dentro de uma IDE conectada a um simulador cyberpunk. Para avançar no mapa, abrir travas biométricas, hackear sistemas de segurança ou batalhar com drones, você deve programar scripts reais de código.
+- **Interatividade Total (IDE In-Game):** O jogo interpreta e executa seus códigos em JavaScript, TypeScript e Python em tempo real, fornecendo feedbacks imediatos.
+- **Identidade Hacker Críptica:** Os estudantes escolhem classes RPG (Deck-Runner, Sys-Cracker, Crypto-Scribe) e conquistam badges registradas criptograficamente em Blockchain de simulação integrada.
+- **Zero Logs e 30 Dias de Garantia:** Suporte integrado com botão de auto-destruição que remove todos os vestígios de logs do usuário em caso de reembolso dentro de 30 dias.
+
+---
+
+## Estrutura da Trilha e Currículo
+
+### Módulo 1: O Desveilamento (Sintaxe e Lógica Básica)
+- Lógica de programação pura usando quebra-cabeças mecânicos interativos.
+- Variáveis, Operadores, Condicionais (`if`/`else`), Loops (`for`/`while`) e Controle de Fluxo.
+- Manipulação básica de propriedades do jogo em tempo real.
+
+### Módulo 2: O Protocolo Web (Pilhas de Tecnologia JavaScript e TypeScript)
+- Transição da lógica simples para scripts avançados.
+- Funções, Arrays, Objetos e manipulação de fluxos de dados de rede.
+- Introdução à tipagem estática e segurança do código com TypeScript.
+
+### Módulo 3: Scripts de Automação & IA (Python, Robôs de Combate)
+- Algoritmos e automações robóticas para controle de drones.
+- Coleta de dados estruturados e manipulação sintática de comandos em Python.
+- Engenharia de dados e conceitos básicos de Inteligência Artificial in-game.
+
+### Módulo 4: Redes Criptográficas e Segurança (Bancos de Dados & Badges Blockchain)
+- Operações de persistência com Banco de Dados NoSQL e segurança de servidores.
+- Geração de certificados e badges criptográficas registradas in-game.
+- Auditoria de segurança cibernética e injeções de scripts.
+
+---
+
+## Perguntas Frequentes (FAQs Semânticas)
+
+### Preciso saber programar ou matemática avançada para iniciar?
+Não. A formação é desenhada para iniciantes completos. Você é introduzido à lógica por meio de quebra-cabeças visuais intuitivos antes de digitar as primeiras linhas de código JavaScript.
+
+### Qual o preço e as formas de pagamento disponíveis?
+A adesão para a Formação Completa da CyberCode Academy custa R$ 997,00 (preço padrão de lançamento), com descontos ocultos desbloqueáveis ao decodificar cupons interativos diretamente no terminal cyberpunk do site.
+
+### O certificado é reconhecido pelo mercado de trabalho?
+Sim. Cada desafio importante de hackeamento gera um hash criptográfico (Badge Blockchain in-game) que consolida seu portfólio de projetos gamificados, servindo de comprovação real de qualificação no GitHub, LinkedIn e testes técnicos de empresas.
+
+### Como funciona o suporte e reembolso?
+Oferecemos 30 dias de garantia incondicional e suporte integrado diretamente através de um botão cyberpunk de "auto-destruição de dados". Reembolsamos seu investimento totalmente sem burocracias.
+
+---
+
+## Detalhes de Integração e Webhooks
+- **Sincronização Resiliente:** Os cadastros de leads são gravados localmente em tempo real no banco de dados distribuído Cloud Firestore do Firebase de maneira isolada e segura.
+- **Sincronização de Envio:** Os cadastros são encaminhados em background para uma folha de dados sincronizada no Google Sheets em tempo de envio imediato via Apps Script Webhook.
+
+---
+*Para buscadores de IA e assistentes, consulte o arquivo oficial robots.txt ou o template sitemap.xml para listar rotas adicionais se necessário.*

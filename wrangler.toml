@@ -1,4 +1,4 @@
-name = "cybercode-academy"
+name = 'neon-script'
 pages_build_output_dir = "./dist/client"
 
 [vars]
